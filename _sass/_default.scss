@@ -1,0 +1,20 @@
+
+    #hero{
+        background-image: url('../images/intro_background.jpg');
+        background-position: bottom left;
+        background-size: cover;
+        width: 100%;
+
+        .hero-container{
+            @include outer-container;
+            padding: 5em 0;
+
+            .content{
+                @include span-columns(4);
+                color: #fff;
+                font-size: 2em;
+                line-height: 1.2;
+                padding: 0.5em 1em 0;
+            }
+        }
+    }

@@ -4,6 +4,7 @@
 .site-header {
     @include outer-container;
     min-height: 56px;
+    padding-bottom: 2em;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -38,8 +39,11 @@
         .page-link {
             color: $brand-primary-color;
             font-family: $base-primary-font;
-            font-weight: $base-primary-weight;
+            font-weight: 400 !important;
+            font-size: 1.2em;
             line-height: $base-line-height;
+
+
 
             // Gaps between nav items, but not on the last one
             &:not(:last-child) {
