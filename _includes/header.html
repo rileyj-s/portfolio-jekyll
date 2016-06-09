@@ -1,24 +1,21 @@
 <header class="site-header">
 
   <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <div class="logo-container">
+        <a class="site-title" href="{{ site.baseurl }}/">
+            <svg id="Layer_1" data-name="Layer 1" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.02 167.73"><defs><style>.cls-1{fill:#342cff;}</style></defs><title>Untitled-2</title><path class="cls-1" d="M381.51,316.14A72.31,72.31,0,0,1,357.34,312l-3-1V176.29l3-1A72.52,72.52,0,0,1,432.79,294.9h0A72.42,72.42,0,0,1,381.51,316.14Zm-18.25-11.56a63.63,63.63,0,1,0,0-121.93V304.58Z" transform="translate(-308.99 -171.1)"/><path class="cls-1" d="M460.32,338.83h-58l-31.58-31.58h10.73A63.5,63.5,0,0,0,414.63,298l3-1.82ZM406,329.94h32.81L416.22,307.3a72.28,72.28,0,0,1-24.67,8.14Z" transform="translate(-308.99 -171.1)"/><path class="cls-1" d="M483,338.83H447.75L409.81,300.9l4.82-2.95a63.91,63.91,0,0,0,11.87-9.34l3.14-3.14Zm-31.58-8.89h10.12l-32-32q-2.7,2.39-5.62,4.5Z" transform="translate(-308.99 -171.1)"/><path class="cls-1" d="M340.57,304.29l-7.41-6.63a72.63,72.63,0,0,1-24.17-54h0a72.62,72.62,0,0,1,24.17-54l7.41-6.63V304.29Zm-8.89-100.23a63.7,63.7,0,0,0-13.8,39.55h0a63.7,63.7,0,0,0,13.8,39.55v-79.1Z" transform="translate(-308.99 -171.1)"/></svg>
+            Riley Jones
+        </a>
+    </div>
 
     <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
-
-      <div class="trigger">
+      <div class="nav-container">
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
+        <a class="page-link" href="#">Blog</a>
       </div>
     </nav>
 
