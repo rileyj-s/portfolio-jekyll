@@ -17,9 +17,9 @@
         .site-title {
             color: $brand-primary-color !important;
             display: inline-block;
-            font-family: $base-primary-font;
+            font-family: $heading-font-family;
             font-size: 1.3em;
-            font-weight: $base-primary-weight;
+            font-weight: $heading-font-weight;
             margin-bottom: 0;
             margin-top: 1.5em;
 
@@ -38,7 +38,7 @@
 
         .page-link {
             color: $brand-primary-color;
-            font-family: $base-primary-font;
+            font-family: $heading-font-family;
             font-weight: 400 !important;
             font-size: 1.2em;
             line-height: $base-line-height;
@@ -55,9 +55,8 @@
 }
 
 /**
- * Portfolio Section
+ * Hero Section
  */
-
     #hero{
         background-image: url('../images/intro_background.jpg');
         background-position: bottom left;
@@ -71,9 +70,16 @@
             .content{
                 @include span-columns(4);
                 color: #fff;
-                font-size: 2em;
                 line-height: 1.2;
                 padding: 0.5em 1em 0;
+
+                p{
+                    font-size: 2em;
+                }
+
+                a{
+                    font-size:1.3em;
+                }
             }
         }
     }
@@ -96,7 +102,6 @@
                 z-index: 2;
 
                 .item-info{
-                    line-height: .3;
                     opacity: 0;
                     padding: 0 2em 1em;
                     position: absolute;
@@ -107,6 +112,7 @@
 
                     h2, h3{
                         color: #fff !important;
+                        line-height: .4;
                     }
 
                     h3{
@@ -147,10 +153,33 @@
     }
 
 /**
+ * Process Section
+ */
+#process-description{
+    @include outer-container;
+    background-color: $brand-primary-color;
+    padding: 3em 2em 0;
+
+        h1, h2, p{
+            color: $brand-content-white;
+        }
+
+        h1{
+            margin-bottom: 40px;
+        }
+
+        article{
+            @include span-columns(4);
+            margin-bottom: 35px;
+        }
+}
+
+
+/**
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid $light-gray;
     padding: $spacing-unit 0;
 }
 
@@ -167,9 +196,8 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: $medium-gray;
     margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
 }
 
 .footer-col {
@@ -193,38 +221,11 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-
-
 /**
  * Page content
  */
 .page-content {
     padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
 }
 
 .post-list {
@@ -238,7 +239,7 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $medium-gray;
 }
 
 .post-link {
@@ -259,36 +260,8 @@
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
 }
