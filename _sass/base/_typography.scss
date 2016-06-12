@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $brand-primary-color;
+  color: $action-color;
   font-family: $heading-font-family;
   font-size: modular-scale(1);
   font-weight: $heading-font-weight;
@@ -29,7 +29,7 @@ h2{
 
 
 p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 0 0 $small-spacing;
 }
 
@@ -38,12 +38,12 @@ a {
   font-weight: $heading-font-weight;
   color: #fff;
   text-decoration: none;
-  transition: color $base-duration $base-timing;
+  transition: background-color $base-duration $base-timing;
 
   &:active,
   &:focus,
   &:hover {
-    color: lighten($action-color, 25%);
+    background-color: darken($action-color, 5%);
   }
 }
 
