@@ -24,7 +24,7 @@ h1{
 }
 
 h2{
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 
@@ -33,17 +33,18 @@ p {
   margin: 0 0 $small-spacing;
 }
 
-a {
+a{
   font-family: $heading-font-family;
-  font-weight: $heading-font-weight;
-  color: #fff;
+  font-size: 1.3em;
+  color: $brand-primary-color;
   text-decoration: none;
-  transition: background-color $base-duration $base-timing;
+  transition: color $base-duration $base-timing;
+
 
   &:active,
   &:focus,
   &:hover {
-    background-color: darken($action-color, 5%);
+    color: darken($action-color, 5%);
   }
 }
 

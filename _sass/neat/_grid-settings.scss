@@ -3,11 +3,13 @@
 
 $column: 90px;
 $gutter: 30px;
-$grid-columns: 4;
+$grid-columns: 12;
 $max-width: 1200px;
 
 // Define your breakpoints
-$first-breakpoint-value: 700px;
-$second-breakpoint-value: 1000px;
+$first-breakpoint-value: 760px;
+$second-breakpoint-value: 960px;
+
+$mobile-viewport: new-breakpoint(min-width 0px 4);
 $tablet-viewport: new-breakpoint(min-width $first-breakpoint-value 8);
 $desktop-viewport: new-breakpoint(min-width $second-breakpoint-value 12);

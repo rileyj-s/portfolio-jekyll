@@ -6,12 +6,10 @@
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "bourbon/bourbon",
-        "base/base",
-        "neat/grid-settings",
-        "neat/neat",
-        "app",
-        "calltoaction",
-        "syntax-highlighting"
-;
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/grid-settings";
+@import "neat/neat";
+@import "app";
+@import "calltoaction";
+@import "syntax-highlighting";

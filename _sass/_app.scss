@@ -10,18 +10,18 @@
     position: relative;
 
     .logo-container{
-        @include span-columns(4);
         float: none;
         text-align: center;
 
+        @include media($mobile-viewport){
+            @include span-columns(4);
+        }
         .site-title {
             color: $brand-primary-color !important;
             display: inline-block;
             font-family: $heading-font-family;
-            font-size: 1.3em;
             font-weight: $heading-font-weight;
-            margin-bottom: 0;
-            margin-top: 1.5em;
+            margin: 2em 0 1em 0;
 
             .logo{
                 display: block;
@@ -32,20 +32,15 @@
         }
     }
     .site-nav {
-        @include span-columns(4);
         display: block;
         line-height: 56px;
-        text-align: center;
+
+        @include media($mobile-viewport){
+            @include span-columns(4);
+            text-align: center;
+        }
 
         .page-link {
-            color: $brand-primary-color;
-            font-family: $heading-font-family;
-            font-weight: 400 !important;
-            font-size: 1.2em;
-            line-height: $base-line-height;
-
-
-
             // Gaps between nav items, but not on the last one
             &:not(:last-child) {
                 margin-right: 20px;
@@ -63,16 +58,20 @@
         background-position: bottom left;
         background-size: cover;
         width: 100%;
+        height: 85vh;
 
         .hero-container{
             @include outer-container;
-            padding: 5em 0;
+            padding: 10em 0.8em;
 
             .content{
-                @include span-columns(4);
                 color: #fff;
                 line-height: 1.2;
                 padding: 0.5em 1em 0;
+
+                @include media($mobile-viewport){
+                    @include span-columns(4);
+                }
 
                 h1{
                     color: #fff;
@@ -80,10 +79,6 @@
                     .accent{
                         color: $action-color;
                     }
-                }
-
-                a{
-                    font-size:1.3em;
                 }
             }
         }
@@ -93,12 +88,15 @@
 /**
  * Portfolio Section
  */
+ .home{
+    padding: 3em 1em;
+ }
 .portfolio{
+
     .portfolio-items{
         @include outer-container;
 
         .portfolio-item{
-            @include span-columns(4);
                 background-color: $action-color;
                 height: 300px;
                 max-width: 650px;
@@ -106,9 +104,13 @@
                 position: relative;
                 z-index: 2;
 
+                @include media($mobile-viewport){
+                    @include span-columns(4);
+                }
+
                 .item-info{
                     opacity: 0;
-                    padding: 0 2em 1em;
+                    padding: 0 1em 1em;
                     position: absolute;
                     right: 0;
                     bottom: 0;
@@ -162,20 +164,23 @@
  */
 #process-description{
     @include outer-container;
-    background-color: $brand-primary-color;
-    padding: 3em 2em 0;
+    //background-color: $brand-primary-color;
+    padding: 3em 1em 0;
 
         h2, p{
-            color: $brand-content-white;
+            color: $brand-primary-color;
         }
 
         h1{
-            margin-bottom: 40px;
+
         }
 
         article{
-            @include span-columns(4);
             margin-bottom: 35px;
+
+            @include media($mobile-viewport){
+                @include span-columns(4);
+            }
         }
 }
 
@@ -186,8 +191,12 @@
     @include outer-container;
 
     .form-container{
-        @include span-columns(4);
-        padding: 3em 2em;
+
+        padding: 3em 1em;
+
+        @include media($mobile-viewport){
+            @include span-columns(4);
+        }
     }
 }
 
@@ -196,11 +205,10 @@
  */
 .site-footer {
     border-top: 1px solid $light-gray;
-    padding: $spacing-unit 0;
 }
 
 .footer-heading {
-    font-size: 18px;
+    //font-size: 18px;
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -208,40 +216,49 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+
+    .footer-mail{
+        color: $action-color;
+    }
 }
 
 .footer-col-wrapper {
-    font-size: 15px;
+    @include outer-container;
+    //font-size: 15px;
     color: $medium-gray;
     margin-left: -$spacing-unit / 2;
-}
+    padding: 3em 1em;
 
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
+    .footer-svg{
+        width: 50px;
+        fill: $action-color;
 
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
+        &:hover{
+            fill: darken($action-color, 5%);
+        }
+    }
 
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
+    .footer-col {
+        margin-bottom: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
 
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+        @include media($mobile-viewport){
+            @include span-columns(4);
+        }
+        .social-media-list, .contact-list{
+            li{
+                margin-bottom: 5px;
+            }
+        }
+    }
 }
 
 /**
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    background-color: lighten($action-color, 33);
+    //padding: $spacing-unit 0;
 }
 
 .post-list {

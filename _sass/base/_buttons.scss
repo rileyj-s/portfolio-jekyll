@@ -3,10 +3,11 @@
   background-color: $action-color;
   border: 0;
   border-radius: $base-border-radius;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
   display: inline-block;
   font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -17,6 +18,10 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+
+  a{
+      color: #fff !important;
+  }
 
   &:hover,
   &:focus {
