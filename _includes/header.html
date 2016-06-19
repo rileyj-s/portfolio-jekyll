@@ -1,13 +1,6 @@
 <header class="site-header">
 
   <div class="wrapper">
-    <div class="logo-container">
-        <a class="site-title" href="{{ site.baseurl }}/">
-            <svg id="Layer_1" data-name="Layer 1" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.02 167.73"><defs></defs><title>Untitled-2</title><path class="logo" d="M381.51,316.14A72.31,72.31,0,0,1,357.34,312l-3-1V176.29l3-1A72.52,72.52,0,0,1,432.79,294.9h0A72.42,72.42,0,0,1,381.51,316.14Zm-18.25-11.56a63.63,63.63,0,1,0,0-121.93V304.58Z" transform="translate(-308.99 -171.1)"/><path class="logo" d="M460.32,338.83h-58l-31.58-31.58h10.73A63.5,63.5,0,0,0,414.63,298l3-1.82ZM406,329.94h32.81L416.22,307.3a72.28,72.28,0,0,1-24.67,8.14Z" transform="translate(-308.99 -171.1)"/><path class="logo" d="M483,338.83H447.75L409.81,300.9l4.82-2.95a63.91,63.91,0,0,0,11.87-9.34l3.14-3.14Zm-31.58-8.89h10.12l-32-32q-2.7,2.39-5.62,4.5Z" transform="translate(-308.99 -171.1)"/><path class="logo" d="M340.57,304.29l-7.41-6.63a72.63,72.63,0,0,1-24.17-54h0a72.62,72.62,0,0,1,24.17-54l7.41-6.63V304.29Zm-8.89-100.23a63.7,63.7,0,0,0-13.8,39.55h0a63.7,63.7,0,0,0,13.8,39.55v-79.1Z" transform="translate(-308.99 -171.1)"/></svg>
-            Riley Jones
-        </a>
-    </div>
-
     <nav class="site-nav">
         {% for my_page in site.pages %}
           {% if my_page.title %}
@@ -16,6 +9,13 @@
         {% endfor %}
         <a class="page-link" href="#">Blog</a>
     </nav>
+
+    <div class="logo-container">
+        <a class="site-title" href="{{ site.baseurl }}/">
+            <svg id="Layer_1" data-name="Layer 1" class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174.02 167.73"><defs></defs><title>Untitled-2</title><path d="M381.51,316.14A72.31,72.31,0,0,1,357.34,312l-3-1V176.29l3-1A72.52,72.52,0,0,1,432.79,294.9h0A72.42,72.42,0,0,1,381.51,316.14Zm-18.25-11.56a63.63,63.63,0,1,0,0-121.93V304.58Z" transform="translate(-308.99 -171.1)"/><path" d="M460.32,338.83h-58l-31.58-31.58h10.73A63.5,63.5,0,0,0,414.63,298l3-1.82ZM406,329.94h32.81L416.22,307.3a72.28,72.28,0,0,1-24.67,8.14Z" transform="translate(-308.99 -171.1)"/><path d="M483,338.83H447.75L409.81,300.9l4.82-2.95a63.91,63.91,0,0,0,11.87-9.34l3.14-3.14Zm-31.58-8.89h10.12l-32-32q-2.7,2.39-5.62,4.5Z" transform="translate(-308.99 -171.1)"/><path d="M340.57,304.29l-7.41-6.63a72.63,72.63,0,0,1-24.17-54h0a72.62,72.62,0,0,1,24.17-54l7.41-6.63V304.29Zm-8.89-100.23a63.7,63.7,0,0,0-13.8,39.55h0a63.7,63.7,0,0,0,13.8,39.55v-79.1Z" transform="translate(-308.99 -171.1)"/></svg>
+            Riley Jones
+        </a>
+    </div>
 
   </div>
 

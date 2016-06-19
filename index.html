@@ -1,22 +1,21 @@
 ---
 layout: homepage
 ---
-
-<div class="home">
-  <h1>Selected Works</h1>
-  <section class="portfolio">
-    {% for post in site.posts %}
-    <div class="portfolio-items">
-        <a href="{{ post.url }}">
-            <div class="portfolio-item">
-                <img src="{{ post.thumb  }}" class="thumbnail" />
-                <div class="item-info">
-                    <h2>{{ post.title }}</h2>
-                    <h3>{{ post.categories }}</h3>
+<section class="portfolio">
+    <div class="portfolio-container">
+        {% for post in site.posts %}
+        <div class="portfolio-items">
+            <h1>Selected Works</h1>
+            <a href="{{ post.url }}">
+                <div class="portfolio-item">
+                    <img src="{{ post.thumb  }}" class="thumbnail" />
+                    <div class="item-info">
+                        <h3>{{ post.title }}</h3>
+                        <h4>{{ post.categories }}</h4>
+                    </div>
                 </div>
-            </div>
-        </a>
-        {% endfor %}
+            </a>
+            {% endfor %}
+        </div>
     </div>
-  </section>
-</div>
+</section>
