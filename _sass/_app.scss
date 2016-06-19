@@ -261,7 +261,7 @@
 
     .process-container{
         h1{
-            margin-bottom: 1.25em;
+            margin-bottom: 1em;
         }
 
         #ruler_pencil, #retractable_knife{
@@ -287,6 +287,9 @@
         @include media($mobile-viewport){
             @include span-columns(4);
             padding: 2em;
+            .second-process-block{
+                    margin-top: 2.5em;
+                }
         }
 
         @include media($tablet-viewport){
@@ -302,6 +305,10 @@
             @include span-columns(10);
             @include shift(1);
             padding: 4em 0;
+
+            .second-process-block{
+                margin: 0;
+            }
         }
     }
 }
