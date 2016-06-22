@@ -111,7 +111,7 @@
  * Hero Section
  */
     #hero{
-        background-image: url('../images/intro_background.jpg');
+        background-image: url('../assets/images/intro_background.jpg');
         background-position: bottom left;
         background-size: cover;
         display: flex;
@@ -448,7 +448,7 @@
 /**
  * Page content
  */
-.page-content {
+.homepage-content {
     background-color: lighten($action-color, 30);
     //padding: $spacing-unit 0;
 }
@@ -477,16 +477,64 @@
 /**
  * Posts
  */
-.post-header {
-    margin-bottom: $spacing-unit;
+
+#description-section{
+    background-color: $brand-primary-color;
+
+    .description-section-container{
+        @include outer-container;
+
+        @include media($mobile-viewport){
+            padding: 3em 2em;
+
+            .project-title{
+                @include span-columns(4);
+                h1{
+                    margin: 0;
+                }
+            }
+
+            .project-category{
+                @include span-columns(4);
+                h3{
+                    color: #fff;
+                }
+
+            }
+        }
+    }
 }
 
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-}
 
-.post-content {
-    margin-bottom: $spacing-unit;
+.post{
+    @include outer-container;
+
+    .post-header {
+        margin-bottom: $spacing-unit;
+    }
+
+    .post-title {
+        font-size: 42px;
+        letter-spacing: -1px;
+        line-height: 1;
+    }
+
+    .post-content {
+        margin-bottom: $spacing-unit;
+
+        .example-container{
+            height: 300px;
+            margin-top: 2em;
+
+            img{
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+
+        @include media($mobile-viewport){
+            @include span-columns(4);
+            padding: 1em 2em;
+        }
+    }
 }
