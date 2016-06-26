@@ -13,6 +13,8 @@ city area for prospective students to see. The navigation was confusing and the 
 reflect the overall site's design. The solution came to be a more user-friendly and
 aesthetically coherent page.
 
+<a href="https://www.covenantseminary.edu/community/stlouis/">Check It Out</a>
+
 <div class="example-container">
 <img class="example-img" alt="St. Louis Page" src="/assets/images/web-covenant/st-louis-intro.png">
 </div>

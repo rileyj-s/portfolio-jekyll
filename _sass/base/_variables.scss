@@ -1,10 +1,11 @@
 // Typography
-$base-font-family: "adelle", serif;
+$base-font-family:  "kepler-std",serif;
+$base-font-weight: 300;
 $heading-font-family: "neuzeit-grotesk",sans-serif;
 $heading-font-weight: 700;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 100%;
 $small-font-size: $base-font-size * 0.875;
 
 // Line height

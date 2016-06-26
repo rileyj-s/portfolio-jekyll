@@ -1,15 +1,9 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I design websites, and identities. With 2 years of experience (and counting), I provide strong impressions for peoples brand's in a way that is coherent with how they do work.
 
-You can find the source code for the Jekyll new theme at:
-{% include github.html %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include github.html %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Within my process of research, feedback, execution, and refinement I bring a genuine care for the people I am working with. I believe in a no bullshit philosophy. The client should not be left out of the process, and I expect to be treated with the same transparency.

@@ -4,6 +4,9 @@
 .site-header {
     min-height: 56px;
     @include outer-container;
+    -webkit-box-shadow: 0 8px 6px -6px #d3d3d3;
+   -moz-box-shadow: 0 8px 6px -6px #d3d3d3;
+        box-shadow: 0 8px 6px -8px #d3d3d3;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -51,7 +54,7 @@
         @include media($mobile-viewport){
             display: flex;
             flex-direction: column;
-            padding: 2em 0;
+            padding: 1em 0;
             text-align: center;
 
             .logo-container{
@@ -379,6 +382,8 @@
 
             .footer-svg{
                 width: 65px;
+                position: relative;
+                top: 5px;
             }
         }
 
@@ -386,9 +391,7 @@
             @include span-columns(4);
             padding: 2em;
 
-            .footer-logo{
-                margin-top: 1.5em;
-            }
+
         }
 
         @include media($tablet-viewport){
@@ -396,6 +399,7 @@
             @include shift(1);
             display: flex;
             align-items: center;
+            padding: 0;
 
             .social-media-list{
                 @include span-columns(5 of 6);
@@ -414,6 +418,7 @@
             @include shift(1);
             display: flex;
             align-items: center;
+            padding: 1.5em;
 
             .social-media-list{
                 @include span-columns(7 of 10);
@@ -502,6 +507,30 @@
 
             }
         }
+
+        @include media($tablet-viewport){
+            padding: 3em 0;
+            .project-title{
+                @include span-columns(6);
+                @include shift(1);            }
+
+            .project-category{
+                @include span-columns(6);
+                @include shift(1)
+            }
+        }
+
+        @include media($desktop-viewport){
+            padding: 3em 0;
+            .project-title{
+                @include span-columns(10);
+                @include shift(1);            }
+
+            .project-category{
+                @include span-columns(10);
+                @include shift(1)
+            }
+        }
     }
 }
 
@@ -511,12 +540,17 @@
 
     .post-header {
         margin-bottom: $spacing-unit;
+
+        @include media($mobile-viewport){
+            padding: 1em 2em 0;
+        }
     }
 
     .post-title {
         font-size: 42px;
         letter-spacing: -1px;
         line-height: 1;
+        margin: 0;
     }
 
     .post-content {
@@ -529,12 +563,100 @@
             img{
                 object-fit: cover;
                 height: 100%;
+                width: 100%;
             }
         }
 
         @include media($mobile-viewport){
             @include span-columns(4);
-            padding: 1em 2em;
+            padding: 2em;
+        }
+
+        @include media($tablet-viewport){
+            @include span-columns(6);
+            @include shift(1);
+            padding: 2em 0;
+        }
+
+        @include media($desktop-viewport){
+            @include span-columns(10);
+            @include shift(1);
         }
     }
 }
+
+/**
+ * About Page
+ */
+
+ #intro-section{
+     @include outer-container;
+     padding-top: 2em;
+
+     @include media($mobile-viewport){
+         .description-container{
+             @include span-columns(4);
+             padding: 1em 2em;
+         }
+
+         .profile-container{
+             @include span-columns(4);
+             padding: 1em 2em;
+
+         }
+     }
+
+     @include media($tablet-viewport){
+         .description-container{
+             @include span-columns(3);
+             @include shift(1);
+             padding: 1em 0;
+         }
+
+         .profile-container{
+             @include span-columns(4);
+             padding: 0 2em 0 0;
+             img{
+                 display: block;
+             }
+         }
+     }
+
+     @include media($desktop-viewport){
+         .description-container{
+             @include span-columns(4);
+             @include shift(1);
+         }
+
+         .profile-container{
+             @include span-columns(6);
+             padding: 0;
+             img{
+                 display: block;
+             }
+         }
+     }
+ }
+
+ #statement-section{
+    @include outer-container;
+
+     .statement-container{
+         @include media($mobile-viewport){
+             @include span-columns(4);
+             padding: 2em 2em;
+         }
+
+         @include media($tablet-viewport){
+             @include span-columns(4);
+             @include shift(4);
+              padding: 3em 2em 3em 0;
+         }
+
+         @include media($desktop-viewport){
+             @include span-columns(6);
+             @include shift(5);
+             padding: 3em 0;
+         }
+     }
+ }
