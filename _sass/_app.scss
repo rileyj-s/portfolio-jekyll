@@ -556,6 +556,10 @@
     .post-content {
         margin-bottom: $spacing-unit;
 
+        .site-link{
+            font-size: 1em;
+            text-decoration: underline;
+        }
         .example-container{
             height: 300px;
             margin-top: 2em;
