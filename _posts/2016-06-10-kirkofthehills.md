@@ -8,9 +8,11 @@ thumb: assets/images/thekirk/main.logo.jpg
 ---
 Problem & Solution
 ------------------
-Renraku is primarily a music label, but also a media Media Corporation with the purpose of creating quality content for its audiences. The problem they had was that they needed an identity for their brand. Renraku had never had a logo before so this was a big step for them resembling an image.
+Kirk Of The Hills is a local church in St. Louis, MO. The church was wanting to update their logo which was mainly their name in Adobe Garamond Pro. In this update, the church was hoping to have an identity that represented their audience in a more effective way. Their audience had a combination of traditional and modern values, and their current logo was resembling mainly the traditional group.
 
-In solving this, I started with how they wanted their personality to presented and also the values thy wanted to represent. Communication, cyber-punk, and bold were all influential factors they wanted embodied in their identity. After the tone was set, research was gathered forming a style and moodboard which brought momentum in iteration and final executions.
+With their solution, the Church wanted an option of 3 logos representing a different aspect of their church. I took these parameters and took a lot of inspiration from the architecture/steeples of their church, as well as the clean aesthetic that is displayed throughout the chapel, which in the end brought a conclusion of a logo that stays true to their modern and traditional groups.
+
+*The logo is still in a decision phase, so none of these are official*
 
 
 <div class="example-container">
