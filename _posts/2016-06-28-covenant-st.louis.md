@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Covenant Seminary"
-date:   2016-06-09 08:32:41 -0500
+date:   2016-06-28 08:32:41 -0500
 categories:
 - web design
 thumb: assets/images/web-covenant/st_louis.png

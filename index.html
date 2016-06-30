@@ -3,9 +3,9 @@ layout: homepage
 ---
 <section class="portfolio">
     <div class="portfolio-container">
-        {% for post in site.posts %}
         <div class="portfolio-items">
             <h1>Selected Works</h1>
+            {% for post in site.posts %}
             <a href="{{ post.url }}">
                 <div class="portfolio-item">
                     <img src="{{ post.thumb  }}" class="thumbnail" />
