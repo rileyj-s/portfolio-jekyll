@@ -8,7 +8,7 @@
 # Site settings
 title: Riley Jones Design
 email: jonesr423@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   Riley Jones Design. Impactful web design and identities for brands who want their
   voices to be loud and heard from all directions.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -21,3 +21,6 @@ medium_username: '@rileyj_s'
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-seo-tag
