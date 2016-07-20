@@ -12,7 +12,7 @@ description: >
   Riley Jones Design. Impactful web design and identities for brands who want their
   voices to be loud and heard from all directions.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://rileyjonesdesign.com" # the base hostname & protocol for your site
 behance_username: RiJones
 twitter_username: rileyj_s
 github_username:  rileyj-s
@@ -24,3 +24,4 @@ markdown: kramdown
 
 gems:
   - jekyll-seo-tag
+  - jekyll-sitemap
