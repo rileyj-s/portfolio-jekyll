@@ -12,7 +12,7 @@ Kirk Of The Hills is a local church in St. Louis, MO. The church was wanting to 
 
 With their solution, the Church wanted an option of 3 logos representing a different aspect of their church. I took these parameters and took a lot of inspiration from the architecture/steeples of their church as well as the clean aesthetic that is displayed throughout the chapel, which in the end brought a conclusion of a logo that stays true to their modern and traditional groups.
 
-(*These logos ended up not making it to the final decision*)
+(*These logos ended up not making it to their final decision*)
 
 
 <div class="example-container">

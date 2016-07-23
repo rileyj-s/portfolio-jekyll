@@ -13,7 +13,7 @@ city area for prospective students. The navigation was confusing and the design 
 reflect the overall site's design. The solution that needed to happen was a more user-friendly and
 aesthetically coherent page.
 
-I documented how the rest of the site functioned and wanted to pull in common interactions into the new page. I also wanted the navigation to be simple and not the headache it used to be, so I brought in a category menu as a well as a sidebar navigation in order that the user wouldn't get exhausting in scrolling through the amount of info.
+I documented how the rest of the site functioned and wanted to pull in common interactions into the new page. I also wanted the navigation to be simple and not the headache it used to be, so I brought in a category menu as a well as a sidebar navigation in order that the user wouldn't get exhausted in scrolling through the amount of info.
 
 <a class="site-link" href="https://www.covenantseminary.edu/community/stlouis/">Check It Out</a>
 
