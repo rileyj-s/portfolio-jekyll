@@ -526,12 +526,13 @@
         @include media($desktop-viewport){
             padding: 3em 0;
             .project-title{
-                @include span-columns(8);
-                @include shift(2);           }
+                @include span-columns(10);
+                @include shift(1);
+            }
 
             .project-category{
-                @include span-columns(8);
-                @include shift(2);
+                @include span-columns(10);
+                @include shift(1);
             }
         }
     }
@@ -569,9 +570,7 @@
             padding: 2em 0;
 
             img{
-                //object-fit: cover;
-                //height: 100%;
-                //width: 100%;
+                width: 100%;
             }
         }
 
@@ -587,8 +586,8 @@
         }
 
         @include media($desktop-viewport){
-            @include span-columns(8);
-            @include shift(2);
+            @include span-columns(10);
+            @include shift(1);
         }
     }
 }
